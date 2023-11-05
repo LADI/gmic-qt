@@ -434,7 +434,7 @@ SOURCES += \
 
 equals(GMIC_DYNAMIC_LINKING, "on" )|equals(GMIC_DYNAMIC_LINKING, "ON" ) {
   message(Dynamic linking with libgmic)
-  LIBS += -Wl,-rpath,. $$GMIC_PATH/libgmic.so
+  LIBS += $$GMIC_PATH/libgmic.so
 }
 
 equals(GMIC_DYNAMIC_LINKING, "off" )|equals(GMIC_DYNAMIC_LINKING, "OFF" ) {
